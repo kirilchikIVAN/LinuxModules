@@ -25,8 +25,8 @@
 2. Добавление символьного устройства - mknod sym_name c <major_number> 0
 3. Функционал модуля:
   - Add user - echo "name surname age email phone" > sym_name
-  - Get user - echo "surname" > sym && cat sym
-  - Del user - echo "del surname" > sym
+  - Get user - echo "surname" > sym_name && cat sym_name
+  - Del user - echo "del surname" > sym_name
 4. Удаление модуля - rmmod /path/to/phonebook.ko
 
 Рабоий процесс модуля сопровождается выводом логов о (не)успехе взаимодействия с символьным устройством в dmesg
